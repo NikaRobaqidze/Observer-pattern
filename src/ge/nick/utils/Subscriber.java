@@ -1,6 +1,15 @@
 package ge.nick.utils;
 
+/**
+ * Abstract class Subscriber is a prototype
+ * of client that have opportunities to subscribe
+ * on category of electronic market to notify
+ * them about new product.
+ * All classes that extends it is subscribable.
+ */
+
 abstract public class Subscriber {
+
     protected String Name;
 
     public Subscriber(String name) {
@@ -11,7 +20,7 @@ abstract public class Subscriber {
         return Name;
     }
 
-    public void notifyMe(Notifity notifier){
+    public void notifyMe(Notifiable notifier){
 
         notifier.doNotifyUser(this);
     }

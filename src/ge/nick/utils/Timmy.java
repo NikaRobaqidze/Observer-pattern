@@ -1,7 +1,17 @@
 package ge.nick.utils;
 
+/**
+ * Class Timmy represent client of
+ * electronic market. Which take notification
+ * from market, because he subscribed on it.
+ * To get this opportunity it extends Subscriber
+ * that have all required methods to take notifications.
+ * Timmy is a formal name of client.
+ */
+
 public class Timmy extends Subscriber {
 
+    // Default constructor to initialize parent.
     public Timmy() {
         super("Timmy");
     }
@@ -12,7 +22,7 @@ public class Timmy extends Subscriber {
     }
 
     @Override
-    public void notifyMe(Notifity notifier) {
+    public void notifyMe(Notifiable notifier) {
         super.notifyMe(notifier);
     }
 
